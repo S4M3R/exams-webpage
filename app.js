@@ -1,5 +1,7 @@
+const CONFIG = require('./config/config.js')
+require('./db/connect.js')
+
 const EXPRESS = require('express')
-const PORT = 2000;
 var app = EXPRESS()
 
 app.set('view engine', 'pug')
@@ -11,4 +13,4 @@ app.get('/', (req,res) => {
 
 
 
-app.listen(PORT)
+app.listen(CONFIG.PORT)
