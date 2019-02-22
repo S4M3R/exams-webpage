@@ -1,0 +1,9 @@
+{
+  "dev":{
+   "BD_HOST": "localhost",
+   "BD_USER": "root",
+   "BD_PASSWORD": "password",
+   "BD_DATABASE": "examsdb",
+   "WEB_PORT": 3000
+ }
+}
