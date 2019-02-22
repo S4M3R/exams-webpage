@@ -1,0 +1,23 @@
+{
+  "name": "exams-webpage",
+  "version": "1.0.0",
+  "description": "El proyecto trata de un sitio web que permitira a los usuarios leer y publicar preguntas sobre distintas materias, ademas de compartir soluciones y material",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S4M3R/exams-webpage.git"
+  },
+  "author": "Samer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S4M3R/exams-webpage/issues"
+  },
+  "homepage": "https://github.com/S4M3R/exams-webpage#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  }
+}
