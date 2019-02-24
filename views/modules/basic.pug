@@ -1,7 +1,8 @@
 html(lang="es" dir="ltr")
   head
     meta(charset="utf-8")
-    title= title | "ExamApp"
+    title= title || "ExamApp"
+    link(rel="icon", type="image/png", href="/static/favicon.png")
     link(rel="stylesheet" href="/css/main.css")
   body
     block content
