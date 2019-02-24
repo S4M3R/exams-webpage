@@ -8,6 +8,12 @@ var getUserByID = (id, callback) =>{
   });
 }
 
+var getUsersByCountry = (country, callback) =>{
+  con.query(`SELECT * FROM User WHERE Country = ${country};`, function (err, selectResult) {
+    if (err) throw err;
+    callback(selectResult)
+  });
+}
 
 module.exports = {
   getUserByID
