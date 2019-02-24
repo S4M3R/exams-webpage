@@ -12,14 +12,19 @@ El proyecto va a ser desrollado en node.js, express, pug y sql. Esto no signific
 ### pagina:
 
 / - Es el landing de la pagina
+
 /login - Registrarse y iniciar sesion con perfiles sociales
+
 /q - Lista de preguntas  
+
 /q/:idPreg - Pregunta
+
 /q/:idPreg/a/Respuesta - Respuesta a pregunta
 
 ### API en api/:
 
 /q
+
 /a
 
 ## Base de Datos:
