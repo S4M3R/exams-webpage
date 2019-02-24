@@ -8,6 +8,8 @@ const USERS = require('./db/user.js')
 
 app.set('view engine', 'pug')
 app.use('/static', EXPRESS.static('static'))
+app.use('/css', EXPRESS.static('css'))
+
 
 app.get('/', (req,res) => {
   res.render('home')
