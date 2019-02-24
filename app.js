@@ -1,14 +1,14 @@
 const CONFIG = require('./config/config.js')
 require('./db/connect.js')
 
-const EXPRESS = require('express')
-var app = EXPRESS()
+var express= require('express')
+var app = express()
 
 const USERS = require('./db/user.js')
 
 app.set('view engine', 'pug')
-app.use('/static', EXPRESS.static('static'))
-app.use('/css', EXPRESS.static('css'))
+app.use('/static', express.static('static'))
+app.use('/css', express.static('css'))
 
 
 app.get('/', (req,res) => {
