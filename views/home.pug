@@ -1,9 +1,30 @@
 extends ./modules/basic.pug
 block content
-  img(src="/static/logo.png" class="header-logo")
-  h1 Examenes y preguntas
-  p Bienvenido al proyecto creado por 
-    a(href="https://github.com/S4M3R") S4M3R
-    span , creado para ser un sitio web donde podes hacer preguntas y compartir examenes.
-  h2 Repositorio  
-    a(href="https://github.com/S4M3R/exams-webpage") aqui
+  div.block-center
+    h1 Objetivo
+    p GalaxyLab tiene como objetivo facilitar, ampliar y mejorar la educacion de las personas, para que se puedan superar a si mismas
+  div.block-center
+    h1 Logros
+    table.dark_data_table
+      tr
+        td
+          span Usuarios
+        td
+          span Institutos
+        td
+          span Examenes
+        td
+          span Preguntas
+        td
+          span Post
+      tr
+        td
+          span #{list.num_users}
+        td
+          span #{list.num_institutes}
+        td
+          span #{list.num_exams}
+        td
+          span #{list.num_questions}
+        td
+          span #{list.num_post}
