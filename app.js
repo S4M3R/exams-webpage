@@ -18,7 +18,15 @@ app.use('/css', express.static('css'))
 app.use('/api', rApi)
 
 app.get('/', (req,res) => {
-  res.render('home')
+  res.render('home', {
+    list:{
+      num_users: 10,
+      num_institutes: 2,
+      num_exams: 98,
+      num_questions: 233,
+      num_post: 33
+    }
+  })
 })
 
 
