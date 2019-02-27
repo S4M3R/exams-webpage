@@ -1,3 +1,53 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background: #0f0f0f;
+}
 .header-logo{
   width: 50px;
+}
+
+.topnav{
+  background-color: #3E00D1;
+  padding: 15px;
+  margin: 0px;
+}
+.topnav-links{
+  text-align: right;
+}
+.topnav-links a{
+  color: white;
+  text-decoration: none;
+  padding-left: 0.5em;
+  font-family: sans-serif;
+}
+.topnav-links a:hover{
+  color: #e0e0e0;
+}
+
+.topnav-logo{
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.block-center{
+  margin: 20px 10%;
+  background: #1f1f1f;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.dark_data_table{
+  text-align: center;
+  color: white;
+  border: 1px white solid;
+  margin: 20px 0px 10px 20%;
+}
+.dark_data_table tr td{
+  padding: 3px;
 }
