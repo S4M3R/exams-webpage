@@ -6,6 +6,8 @@ var app = express()
 var bodyParser = require('body-parser')
 
 var rApi = require('./routes/api.js')
+var rUser = require('./routes/user.js')
+var rSubject = require('./routes/subject.js')
 
 app.set('view engine', 'pug')
 app.use(bodyParser.urlencoded({
@@ -16,6 +18,9 @@ app.use(bodyParser.urlencoded({
 app.use('/static', express.static('static'))
 app.use('/css', express.static('css'))
 app.use('/api', rApi)
+app.use('/u', rUser)
+app.use('/s', rSubject)
+
 
 app.get('/', (req,res) => {
   res.render('home', {
