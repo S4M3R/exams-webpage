@@ -41,6 +41,14 @@ body{
   color: white;
   padding: 10px;
 }
+.block-center a{
+  color: white;
+  text-decoration: none;
+}
+
+.block-center ul li a{
+  color: skyblue;
+}
 
 .dark_data_table{
   text-align: center;
@@ -50,4 +58,8 @@ body{
 }
 .dark_data_table tr td{
   padding: 3px;
+}
+.profile-img{
+  border-radius: 50%;
+  width: 200px;
 }
