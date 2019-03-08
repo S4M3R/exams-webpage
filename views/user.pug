@@ -1,0 +1,23 @@
+extends ./modules/basic.pug
+block content
+  - if (user.length >= 1)
+    div.block-center
+      img(alt="profile image" src=user[0].profile_img).profile-img
+      h1= user[0].name+' '+user[0].surname
+      h2.user-handle= `@${user[0].username}`
+      p= user[0].description
+      span(style='color: #'+user[0].color)= user[0].rank_name
+      
+    div.block-center
+      ul
+        li Github:  
+          a(href="http://www.github.com/"+user[0].github_name)= user[0].github_name 
+        li Twitter:  
+          a(href="http://www.twitter.com/"+user[0].twitter_name)= user[0].twitter_name 
+        li Linkedin:  
+          a(href="http://www.linkedin.com/in/"+user[0].linkedin_name)= user[0].linkedin_name 
+        li Website:  
+          a(href=user[0].website)= user[0].website 
+  -else
+    div.block-center
+      h1 El usuario no existe

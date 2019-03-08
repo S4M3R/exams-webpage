@@ -1,0 +1,16 @@
+extends ./modules/basic.pug
+block content
+  -if (subjects.length > 0)
+    div.block-center
+      - subject = subjects[0]
+      h1=subject.name
+      p=subject.description
+
+    div.block-center
+      h2 Echo por:
+      a(href='/u/'+subject.creator_id)
+        img(src=subject.profile_img)
+        h1=subject.username
+  -else 
+    div.block-center
+      h1 No se ha encontrado

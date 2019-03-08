@@ -1,0 +1,9 @@
+extends ./modules/basic.pug
+block content
+  -for(var i = 0;i < users.length;i++)
+    -user = users[i]
+    div.block-center
+      a(href='/u/'+user.id)
+        img(alt="profile image" src=user.profile_img).profile-img
+        h1= user.name+' '+user.surname
+        h2.user-handle= `@${user.username}`
